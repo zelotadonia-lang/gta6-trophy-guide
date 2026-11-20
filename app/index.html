@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA 6 Trophy Guide &amp; Tracker</title>
+<meta name="description" content="Offline guide and checklist for all 55 Grand Theft Auto VI trophies on PlayStation 5: roadmap to the platinum, missable flags, and a cited guide for every trophy.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>GTA 6 Trophy Guide &amp; Tracker</h1>
+    <p class="lede">Every official trophy, its guide and its source, plus a checklist that saves in your browser. No account, no network, no spoilers unless you ask for them.</p>
+    <div class="progress-wrap" aria-label="Overall progress">
+      <div class="progress-line"><strong id="progress-count">0 of 55 earned</strong><span id="progress-pct">0%</span></div>
+      <div class="progress-bar"><div id="progress-fill"></div></div>
+      <p class="progress-grades" id="progress-grades"></p>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar" role="region" aria-label="Tracker controls">
+  <div class="toolbar-inner">
+    <label class="search-label">Search <input id="search" type="search" placeholder="Trophy name or mission&hellip;" autocomplete="off"></label>
+    <div class="filters" id="kind-filters" role="group" aria-label="Filter by kind"></div>
+    <label class="grade-label">Grade
+      <select id="grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="toggle"><input id="spoiler" type="checkbox"> Hide story spoilers</label>
+    <span class="toolbar-progress" id="toolbar-progress" aria-live="polite"></span>
+    <div class="io">
+      <button id="export" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="import" type="file" accept="application/json"></label>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="roadmap" id="roadmap" aria-labelledby="roadmap-heading">
+    <h2 id="roadmap-heading">Roadmap to the platinum</h2>
+    <p class="section-note">Built from the official descriptions only. No description names a chapter a trophy can only be earned in, so the missable flags mark trophies whose condition is a one-off event or needs a story partner at your side. Do those while the chance is there.</p>
+    <ol class="stages" id="stages"></ol>
+  </section>
+
+  <section class="list-section" id="list-section" aria-labelledby="list-heading">
+    <h2 id="list-heading">Trophy checklist</h2>
+    <p class="section-note" id="list-note"></p>
+    <p class="empty" id="empty" hidden>No trophies match this filter. The official list holds no online trophies, so the online filter is empty by design.</p>
+    <ul class="trophies" id="trophies"></ul>
+  </section>
+
+  <footer>
+    <p>Unofficial fan guide. Not affiliated with Rockstar Games, Sony Interactive Entertainment, Exophase or PSNProfiles. Trophy names, descriptions and grades are shown as PlayStation publishes them; each guide is written for this page and cites the official description as listed by Exophase and PSNProfiles. The page works offline and stores your progress only in this browser.</p>
+  </footer>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
